@@ -8,9 +8,6 @@ import Products from './pages/Products';
 import { GoogleLogin } from 'react-google-login';
 
 function App() {
-  const responseGoogle = (response) => {
-  console.log(response);
-}
   return (
     <>
       <Router>
@@ -19,6 +16,8 @@ function App() {
           <Route path='/' exact component={Home} />
           <Route path='/reports' component={Reports} />
           <Route path='/products' component={Products} />
+          <Route exact path="/register" component={Register} />
+	  <Route exact path="/login" component={Login} />
         </Switch>
       </Router>
     </>
