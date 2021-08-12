@@ -4,8 +4,8 @@ import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Reports from './pages/Reports';
-import Products from './pages/Products';
-import { GoogleLogin } from 'react-google-login';
+import Products from './components/auth/Register';
+import Register from './components/auth/Login';
 
 function App() {
   return (
